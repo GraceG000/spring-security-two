@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.sql.Date;
 import java.util.Calendar;
 
-import static org.aspectj.bridge.Version.getTime;
+
 
 @Entity
 @Data
