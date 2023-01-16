@@ -34,6 +34,7 @@ public class PasswordResetToken {
     }
 
     public PasswordResetToken(String token) {}
+
     private Date calculateExpirationDate(int expirationTime){
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(new Date(2000, 8, 8).getTime());

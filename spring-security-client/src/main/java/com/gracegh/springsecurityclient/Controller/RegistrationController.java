@@ -12,6 +12,7 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
@@ -70,6 +71,25 @@ public class RegistrationController {
 
           return url;
     }
+
+    @PostMapping("/savePassword")
+    public String savePassword(@RequestParam("token") String token, @RequestBody PasswordModel passwordModel){
+        String result = userService.validatePasswordResetToken(token);
+
+        if(!result.equalsIgnoreCase("valid")){
+            return "Invalid Token";
+        }
+
+        Optional<User> user = userService.getUserByPasswordResetToken(token);
+        if(user.isPresent()){
+            userService.changePassword(user.get(), passwordModel.getNewPassword());
+            return "Password has been reset successfully";
+        }else {
+            return "Invalid Token";
+        }
+    }
+
+
 
     private String passwordResetTokenMail(User user, String applicationUrl, String token) {
         String url = applicationUrl + "/savePassword?token=" + token;
