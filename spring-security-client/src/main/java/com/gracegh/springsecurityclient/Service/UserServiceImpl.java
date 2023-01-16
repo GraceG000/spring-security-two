@@ -1,8 +1,10 @@
 package com.gracegh.springsecurityclient.Service;
 
+import com.gracegh.springsecurityclient.Entity.PasswordResetToken;
 import com.gracegh.springsecurityclient.Entity.User;
 import com.gracegh.springsecurityclient.Entity.VerificationToken;
 import com.gracegh.springsecurityclient.Model.UserModel;
+import com.gracegh.springsecurityclient.Repository.PasswordResetTokenRepository;
 import com.gracegh.springsecurityclient.Repository.UserRepository;
 import com.gracegh.springsecurityclient.Repository.VerificationTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,9 @@ public class UserServiceImpl implements UserService {
     private VerificationTokenRepository verificationTokenRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    @Autowired
+    private PasswordResetTokenRepository passwordResetTokenRepository;
 
     @Override
     public User registerUser(UserModel userModel){
@@ -71,5 +76,17 @@ public class UserServiceImpl implements UserService {
         verificationToken.setToken(UUID.randomUUID().toString());
         verificationTokenRepository.save(verificationToken);
         return verificationToken;
+    }
+
+    @Override
+    public User findUserByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    @Override
+    public void createPasswordResetTokenForUser(User user, String token) {
+        PasswordResetToken passwordResetToken = new PasswordResetToken(user, token);
+
+        passwordResetTokenRepository.save(passwordResetToken);
     }
 }

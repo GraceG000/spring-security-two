@@ -3,6 +3,7 @@ package com.gracegh.springsecurityclient.Controller;
 import com.gracegh.springsecurityclient.Entity.User;
 import com.gracegh.springsecurityclient.Entity.VerificationToken;
 import com.gracegh.springsecurityclient.Event.RegistrationComplete;
+import com.gracegh.springsecurityclient.Model.PasswordModel;
 import com.gracegh.springsecurityclient.Model.UserModel;
 import com.gracegh.springsecurityclient.Service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -11,6 +12,7 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.UUID;
 
 @Slf4j
 @RestController
@@ -42,6 +44,7 @@ public class RegistrationController {
          return "Bad user";
     }
 
+
     @GetMapping("/resendToken")
     public String resendVerification(@RequestParam("token") String oldToken, HttpServletRequest request){
 
@@ -50,6 +53,31 @@ public class RegistrationController {
         User user = verificationToken.getUser();
         resendVerificationMail(user, applicationUrl(request), verificationToken);
         return "Verification Link Sent";
+    }
+
+    @PostMapping("/resetPassword")
+    public String resetPassword(@RequestBody PasswordModel passwordModel, HttpServletRequest request){
+          User user = userService.findUserByEmail(passwordModel.getEmail());
+          String url ="";
+
+          if(user!=null){
+              String token = UUID.randomUUID().toString();
+              userService.createPasswordResetTokenForUser(user, token);
+
+              url = passwordResetTokenMail(user, applicationUrl(request), token);
+
+          }
+
+          return url;
+    }
+
+    private String passwordResetTokenMail(User user, String applicationUrl, String token) {
+        String url = applicationUrl + "/savePassword?token=" + token;
+
+        //send verificationEmail()
+        log.info("Click the link to reset your password: {}", url);
+
+        return url;
     }
 
     private void resendVerificationMail(User user, String applicationUrl, VerificationToken verificationToken) {
