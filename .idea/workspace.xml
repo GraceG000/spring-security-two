@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0803da1-a929-4454-9e3b-ecf3dc0b3f6b" name="Changes" comment="First Push">
-      <change afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Service/CustomUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d0803da1-a929-4454-9e3b-ecf3dc0b3f6b" name="Changes" comment="First Push" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +102,7 @@
       <workItem from="1673600252309" duration="16555000" />
       <workItem from="1673861177432" duration="12690000" />
       <workItem from="1673890792561" duration="1171000" />
-      <workItem from="1673945097036" duration="7049000" />
+      <workItem from="1673945097036" duration="7696000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <created>1673538020202</created>
@@ -173,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673888123440</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="First Push">
+      <created>1673974138076</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673974138076</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
