@@ -1,0 +1,15 @@
+server:
+  port:9000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_registration
+    username: GraceGh
+    password: Carl
+    driver-class-name: org.postgresql.Driver
+  hikari:
+    schema: security_schema
+  jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
