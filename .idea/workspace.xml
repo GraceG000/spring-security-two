@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0803da1-a929-4454-9e3b-ecf3dc0b3f6b" name="Changes" comment="First Push">
-      <change afterPath="$PROJECT_DIR$/Oauth-resource-server/src/main/java/com/gracegh/Oauthresourceserver/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oauth-resource-server/src/main/java/com/gracegh/Oauthresourceserver/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/gracegh/springsecurityclient/Controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/gracegh/springsecurityclient/Config/WebClientConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/gracegh/springsecurityclient/Config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/gracegh/springsecurityclient/Config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/src/main/java/com/gracegh/springsecurityclient/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/src/main/java/com/gracegh/springsecurityclient/Controller/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +115,7 @@
       <workItem from="1673890792561" duration="1171000" />
       <workItem from="1673945097036" duration="9497000" />
       <workItem from="1674031108811" duration="1368000" />
-      <workItem from="1674032779252" duration="10095000" />
+      <workItem from="1674032779252" duration="11554000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <created>1673538020202</created>
@@ -228,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674043924507</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="First Push">
+      <created>1674055212495</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674055212495</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
