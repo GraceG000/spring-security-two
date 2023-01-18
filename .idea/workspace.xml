@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0803da1-a929-4454-9e3b-ecf3dc0b3f6b" name="Changes" comment="First Push">
+      <change afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Config/DefaultSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Service/CustomAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/OAuth-authorization-server/src/main/java/com/gracegh/OAuthauthorizationserver/Config/AuthorizationServerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +108,7 @@
       <workItem from="1673890792561" duration="1171000" />
       <workItem from="1673945097036" duration="9497000" />
       <workItem from="1674031108811" duration="1368000" />
-      <workItem from="1674032779252" duration="619000" />
+      <workItem from="1674032779252" duration="3274000" />
     </task>
     <task id="LOCAL-00001" summary="First Push">
       <created>1673538020202</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674031357860</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="First Push">
+      <created>1674033643256</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674033643256</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
